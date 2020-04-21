@@ -1,0 +1,23 @@
+plugins {
+    id 'java'
+    id 'jacoco'
+    id 'application'
+}
+
+group 'tdd.learning'
+version '1.0-SNAPSHOT'
+
+sourceCompatibility = 1.8
+
+mainClassName = "com.packetpublishing.tddjava.ch09.Application"
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    compile group: 'org.springframework.boot', name: 'spring-boot-starter-thymeleaf', version: '2.2.1.RELEASE'
+    compile group: 'org.springframework.boot', name: 'spring-boot-starter-web', version: '2.2.1.RELEASE'
+
+    testCompile group: 'junit', name: 'junit', version: '4.12'
+}
